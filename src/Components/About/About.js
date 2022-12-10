@@ -6,20 +6,20 @@ const About = () => {
   const { photo, name, role, description, resume, social } = about;
 
   return (
-    <div className='about center'>
+    <div className='about'>
       {photo && (
         <img height='300px' alt='imageProfile' src={photo} />
       )}
       {name && (
         <h1>
-          <span className='about__name'>{name}</span>
+          <span className='about-name'>{name}</span>
         </h1>
       )}
 
-      {role && <h2 className='about__role'> A {role}</h2>}
-      <p className='about__desc'>{description && description}</p>
+      {role && <h2 className='about-role'> A {role}</h2>}
+      <p className='about-desc'>{description && description}</p>
 
-      <div className='about__contact center'>
+      <div className='about-contact'>
         {resume && (
           <a href={resume}
             aria-label='resume'
@@ -43,7 +43,7 @@ const About = () => {
 
             {social.github && (
               <a
-                href={social.linked}
+                href={social.linkedin}
                 aria-label='github'
                 className='link link--icon'
               >
