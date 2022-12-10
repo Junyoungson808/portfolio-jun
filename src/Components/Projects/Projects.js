@@ -2,6 +2,7 @@ import uniqid from 'uniqid'
 import { projects } from "../Portfolio/Portfolio"
 import ProjectContainer from '../ProjectContainer/ProjectCont'
 import './projects.css';
+import Card from '@mui/material/Card';
 
 const Projects = () => {
   if(!projects.length) return null
@@ -12,7 +13,9 @@ const Projects = () => {
 
       <div className='projects-grid'>
         {projects.map((project) => (
+        <Card >
           <ProjectContainer key={uniqid()} project={project} />
+        </Card>
         ))}
       </div>
     </section>

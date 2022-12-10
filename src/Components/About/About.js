@@ -1,14 +1,18 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { about } from '../Portfolio/Portfolio'
+import Card from '@mui/material/Card';
 
 const About = () => {
   const { photo, name, role, description, resume, social } = about;
 
   return (
-    <div className='about'>
+    <div className='about center'>
+      <Card>
+
+
       {photo && (
-        <img height='300px' alt='imageProfile' src={photo} />
+          <img height='300px' alt='imageProfile' src={photo} />
       )}
       {name && (
         <h1>
@@ -54,6 +58,7 @@ const About = () => {
           </>
         )}
       </div>
+      </Card>
     </div>
   )
 }
