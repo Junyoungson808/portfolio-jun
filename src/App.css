@@ -12,9 +12,10 @@ main {
   margin-top: 5em;
 }
 
-.section_title {
+.section-title {
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 1em;
 }
 
 .center {

@@ -8,56 +8,54 @@ const About = () => {
 
   return (
     <div className='about center'>
-      <Card>
-
-
-      {photo && (
+      <Card className='about-card'>
+        {photo && (
           <img height='300px' alt='imageProfile' src={photo} />
-      )}
-      {name && (
-        <h1>
-          <span className='about-name'>{name}</span>
-        </h1>
-      )}
-
-      {role && <h2 className='about-role'> A {role}</h2>}
-      <p className='about-desc'>{description && description}</p>
-
-      <div className='about-contact'>
-        {resume && (
-          <a href={resume}
-            aria-label='resume'
-            className='link link--icon'
-          >
-
-          </a>
+        )}
+        {name && (
+          <h1>
+            <span className='about-name'>{name}</span>
+          </h1>
         )}
 
-        {social && (
-          <>
-            {social.github && (
-              <a
-                href={social.github}
-                aria-label='github'
-                className='link link--icon'
-              >
-                <GitHubIcon />
-              </a>
-            )}
+        {role && <h2 className='about-role'> {role} </h2>}
+        <p className='about-desc'>{description && description}</p>
 
-            {social.github && (
-              <a
-                href={social.linkedin}
-                aria-label='github'
-                className='link link--icon'
-              >
-                <LinkedInIcon />
-              </a>
+        <div className='about-contact'>
+          {resume && (
+            <a href={resume}
+              aria-label='resume'
+              className='link link--icon'
+            >
 
-            )}
-          </>
-        )}
-      </div>
+            </a>
+          )}
+
+          {social && (
+            <>
+              {social.github && (
+                <a
+                  href={social.github}
+                  aria-label='github'
+                  className='link link--icon'
+                >
+                  <GitHubIcon />
+                </a>
+              )}
+
+              {social.github && (
+                <a
+                  href={social.linkedin}
+                  aria-label='github'
+                  className='link link--icon'
+                >
+                  <LinkedInIcon />
+                </a>
+
+              )}
+            </>
+          )}
+        </div>
       </Card>
     </div>
   )

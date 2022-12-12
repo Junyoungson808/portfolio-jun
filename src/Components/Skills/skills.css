@@ -5,6 +5,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  list-style: none;
+  margin-bottom: 2em;
 }
 
 .skills-list-item {

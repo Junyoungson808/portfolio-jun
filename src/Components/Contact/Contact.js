@@ -5,9 +5,9 @@ const Contact = () => {
 
   return (
     <section className=''>
-      <h2>Contact</h2>
+      <h2 className='section-title'>Contact</h2>
       <a href={`mailto:${contact.email}`}>
-        <span type='button' className=''>
+        <span type='button' className='section-content'>
         Email me
         </span>
       </a>
