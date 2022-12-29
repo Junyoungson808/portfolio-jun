@@ -22,14 +22,14 @@ const projects = [
     liveSite: '',
   },
   {
-    name: 'Untapped Island 2',
+    name: 'Coin Fellows',
     description: '',
     stack: ['Javascript, Git, Github, AWS, Prisma, React, Node, Jest, Inquirer'],
     source: '',
     liveSite: '',
   },
   {
-    name: 'Untapped Island 3',
+    name: 'Git Push',
     description: '',
     stack: ['Javascript, Git, Github, AWS, Prisma, React, Node, Jest, Inquirer'],
     source: '',
