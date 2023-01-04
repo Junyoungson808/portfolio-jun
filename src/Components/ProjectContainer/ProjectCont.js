@@ -12,9 +12,9 @@ const ProjectContainer = ({ project }) => (
     {project.stack && (
       <ul className='project-stack'>
         {project.stack.map((item) => (
-          <li key={uniqid()} className='project-stack-item'>
+          <ul key={uniqid()} className='project-stack-item' sx={{}}>
             {item}
-          </li>
+          </ul>
         ))}
       </ul>
     )}

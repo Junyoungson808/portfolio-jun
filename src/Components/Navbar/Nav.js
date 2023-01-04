@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
-      <ul
+      {/* <ul
         style={{ display: showNavList ? 'flex' : null }}
         className='nav-list'
       >
@@ -49,7 +49,7 @@ const Navbar = () => {
           </li>
         ) : null}
 
-      </ul>
+      </ul> */}
 
     </nav>
 
